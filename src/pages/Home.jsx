@@ -6,7 +6,9 @@ import Footer from "../components/Footer"
 import ReviewList from "../components/ReviewList/index";
 import reviews from "../json/suggests.json";
 import plans from "../json/planning.json"
+import processes from "../json/process.json"
 import IsPlanningList from "../components/IsPlanningList";
+import IsProcessList from "../components/IsProcessList";
 
 function Home() {
   const title = "NORDIC NEST Shopping Cart";
@@ -21,7 +23,8 @@ function Home() {
       />
       <ReviewList reviews={reviews} />
       {/* <NearbyList products={products} className="layoutContent" /> */}
-      <IsPlanningList plans={plans} className="layoutContent"/>
+      <IsPlanningList plans={plans} />
+      <IsProcessList processes={processes} />
       <Footer className="layoutFooter" />
     </div>
   );

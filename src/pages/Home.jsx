@@ -8,9 +8,11 @@ import reviews from "../json/suggests.json";
 import plans from "../json/planning.json"
 import collections from "../json/collection.json"
 import processes from "../json/process.json"
+import recents from "../json/recent.json"
 import IsPlanningList from "../components/IsPlanningList";
 import IsProcessList from "../components/IsProcessList";
 import ReadyGoList from "../components/ReadyGoList";
+import RecentList from "../components/RecentList";
 
 function Home() {
   const title = "NORDIC NEST Shopping Cart";
@@ -28,6 +30,7 @@ function Home() {
       <IsPlanningList plans={plans} />
       <IsProcessList processes={processes} />
       <ReadyGoList collections={collections}/>
+      <RecentList recents={recents}/>
       <Footer className="layoutFooter" />
     </div>
   );

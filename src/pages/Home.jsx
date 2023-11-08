@@ -1,8 +1,8 @@
 import { Helmet } from "react-helmet-async"
 import Header from "../components/Header"
 import Footer from "../components/Footer"
-// import NearbyList from "../components/NearbyList";
-// import products from "../json/products.json";
+import NearbyList from "../components/NearbyList";
+import products from "../json/products.json";
 import ReviewList from "../components/ReviewList/index";
 import reviews from "../json/suggests.json";
 import plans from "../json/planning.json"
@@ -26,7 +26,7 @@ function Home() {
         slogan="An example made by Vite."
       />
       <ReviewList reviews={reviews} />
-      {/* <NearbyList products={products} className="layoutContent" /> */}
+      <NearbyList products={products} className="layoutContent" />
       <IsPlanningList plans={plans} />
       <IsProcessList processes={processes} />
       <ReadyGoList collections={collections}/>

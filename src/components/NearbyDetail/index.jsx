@@ -1,72 +1,46 @@
 import { useState } from "react";
 import { Row, Col, Select } from "antd";
-import AddToBasket from "../AddToBasket"
-import styles from "./nearbydetail.module.css"
+import { EnvironmentFilled,ClockCircleOutlined,GlobalOutlined } from "@ant-design/icons";
+import styles from "./nearbydetail.module.css";
 const { Option } = Select;
 
 function ProductDetail({ product }) {
-   const [qty, setQty] = useState(product.countInStock > 0 ? 1 : 0);
+  const [qty, setQty] = useState(product.countInStock > 0 ? 1 : 0);
 
-
-   return (
-      <Row gutter={[32, 32]}
-         style={{ justifyContent: 'center' }}
-      >
-         <Col
-            xs={{ span: 24 }}
-            lg={{ span: 6 }}
-         >
-            <img
-               alt={product.name}
-               className={styles.image}
-               src={product.image}
-            />
-         </Col>
-         <Col
-            xs={{ span: 24 }}
-            lg={{ span: 14 }}
-         >
-            <div className={styles.info} >
-               <h2 className={styles.category} >
-                  {product.category}
-               </h2>
-               <h1 className={styles.name} >
-                  {product.name}
-               </h1>
-               <p className={styles.description}>
-                  {product.description_long}
-               </p>
-               <div className={styles.wrap}>
-                  <p className={styles.price} >
-                     US${product.price}.00
-                  </p>
-                  <p className={styles.status}>
-                     Status: {product.countInStock > 0 ? "In Stock" : "Unavailable."}
-                  </p>
-                  <div className={styles.qty}>
-                     Qty: {"   "}
-                     <Select
-                        defaultValue={qty}
-                        key={qty}                        
-                        className={styles.selectStyle}
-                        onChange={val => setQty(val)}
-                     >
-                        {[...Array(product.countInStock).keys()].map((x) => (
-                           <Option key={x + 1} value={x + 1}>
-                              {x + 1}
-                           </Option>
-                        ))}
-                     </Select>
-                  </div>
-                  <p className={styles.qty}>
-                     Total Price: {product.price * qty}
-                  </p>
-                  <AddToBasket />
-               </div>
-            </div>
-         </Col>
-      </Row>
-   );
+  return (
+    <Row gutter={[0, 0]} style={{ justifyContent: "center", margin: "1rem" }}>
+      <h2 className={styles.category}>{product.category}</h2>
+      <Col xs={{ span: 24 }} lg={{ span: 6 }}>
+        <div className={styles.infobar}>
+          <h1 className={styles.name}>{product.name}</h1>
+        </div>
+      </Col>
+      <Col xs={{ span: 24 }} lg={{ span: 6 }}>
+        <img alt={product.name} className={styles.image} src={product.image} />
+      </Col>
+      <Col xs={{ span: 24 }} lg={{ span: 14 }}>
+        <div className={styles.info}>
+          <p className={styles.description}>{product.description_long}</p>
+        </div>
+      </Col>
+      <Col xs={{ span: 24 }} lg={{ span: 14 }}>
+        <div className={styles.infobox}>
+          <div className={styles.infosection}>
+            <EnvironmentFilled style={{color:"black",marginRight:"2rem"}}/>
+            <p className={styles.description}>{product.site}</p>
+          </div>
+          <div className={styles.infosection}> 
+            <ClockCircleOutlined style={{color:"black",marginRight:"2rem"}}/>
+            <p className={styles.description}>{product.time}</p>
+          </div>
+          <div className={styles.infosection}>
+            <GlobalOutlined style={{color:"black",marginRight:"2rem"}}/>
+            <p className={styles.description}>{product.website}</p>
+          </div>
+        </div>
+      </Col>
+    </Row>
+  );
 }
 
 export default ProductDetail;

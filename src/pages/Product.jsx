@@ -15,11 +15,11 @@ function Product() {
    return (
       <div className="container mainLayout">
          <Helmet><title>product</title></Helmet>
-         <Header
+         {/* <Header
             className="layoutHeader"
             title="Product Detail"
             slogan="An example made by Vite."
-         />
+         /> */}
          <NearbyDetail product={product} className="layoutContent" />
          <Footer className="layoutFooter" />
       </div>

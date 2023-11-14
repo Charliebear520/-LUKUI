@@ -5,8 +5,8 @@ import { Button } from "antd";
 export default function ReadyGoItem({ collection }) {
   return (
     <div className={styles.item}>
-      <Link to={`/collecitons/id/${collection.id}`}>
-        <img style={{ width: "100%",borderRadius:10,border:'1px black solid' }} src={collection.image} alt={collection.name} />
+      <Link to={`/collections/id/${collection.id}`}>
+        <img style={{ width: "100%" ,padding:"1.5rem",borderRadius: 10}} src={collection.image} alt={collection.name} />
       </Link>
       <div className={styles.info}>
         {/* <h6 className={styles.category}>
@@ -15,9 +15,9 @@ export default function ReadyGoItem({ collection }) {
         <h2 className={styles.name}>{collection.name}</h2>
         <p className={styles.description}>{collection.description}</p>
       </div>
-      <div>
+      {/* <div>
       <p className={styles.description_long}>{collection.description_long}</p>
-      </div>
+      </div> */}
       <div className={styles.btnbox}>
         <Button
           type="primary"
@@ -34,7 +34,7 @@ export default function ReadyGoItem({ collection }) {
           }}
           className={styles.btn}
         >
-          查看
+          編輯
         </Button>
       </div>
     </div>

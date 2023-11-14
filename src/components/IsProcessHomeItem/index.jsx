@@ -1,23 +1,23 @@
 import { Link } from "react-router-dom";
-import styles from "./readygoitem.module.css";
+import styles from "./isprocesshomeitem.module.css";
 import { Button } from "antd";
 
-export default function ReadyGoItem({ collection }) {
+export default function IsProcessHomeItem({ process }) {
   return (
     <div className={styles.item}>
-      <Link to={`/collecitons/id/${collection.id}`}>
-        <img style={{ width: "100%",borderRadius:10,border:'1px black solid' }} src={collection.image} alt={collection.name} />
+      <Link to={`/processs/id/${process.id}`}>
+        <img style={{ width: "100%" ,padding:"1.5rem",borderRadius: 10}} src={process.image} alt={process.name} />
       </Link>
       <div className={styles.info}>
         {/* <h6 className={styles.category}>
-               {collection.category}
+               {process.category}
             </h6> */}
-        <h2 className={styles.name}>{collection.name}</h2>
-        <p className={styles.description}>{collection.description}</p>
+        <h2 className={styles.name}>{process.name}</h2>
+        <p className={styles.description}>{process.description}</p>
       </div>
-      <div>
-      <p className={styles.description_long}>{collection.description_long}</p>
-      </div>
+      {/* <div>
+      <p className={styles.description_long}>{process.description_long}</p>
+      </div> */}
       <div className={styles.btnbox}>
         <Button
           type="primary"

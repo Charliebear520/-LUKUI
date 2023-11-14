@@ -3,16 +3,21 @@ import Header from "../components/Header"
 import Footer from "../components/Footer"
 import NearbyList from "../components/NearbyList";
 import products from "../json/products.json";
-import ReviewList from "../components/ReviewList/index";
+import ReviewList from "../components/ReviewList";
 import reviews from "../json/suggests.json";
-import plans from "../json/planning.json"
+
 import collections from "../json/collection.json"
 import processes from "../json/process.json"
 import recents from "../json/recent.json"
-import IsPlanningList from "../components/IsPlanningList";
-import IsProcessList from "../components/IsProcessList";
-import ReadyGoList from "../components/ReadyGoList";
+import suggests from "../json/suggests.json"
+import ranks from "../json/rank.json"
+
+
+import ReadyGoHomeList from "../components/ReadyGoHomeList";
 import RecentList from "../components/RecentList";
+import IsProcessHomeList from "../components/IsProcessHomeList";
+import SuggestList from "../components/SuggestList ";
+import RankList from "../components/RankList ";
 
 function Home() {
   const title = "NORDIC NEST Shopping Cart";
@@ -25,11 +30,12 @@ function Home() {
         title={title}
         slogan="An example made by Vite."
       />
+      <IsProcessHomeList processes={processes}/>
+      <ReadyGoHomeList collections={collections}/>
       <ReviewList reviews={reviews} />
+      <SuggestList suggests={suggests}/>
+      <RankList ranks={ranks}/>
       <NearbyList products={products} className="layoutContent" />
-      <IsPlanningList plans={plans} />
-      <IsProcessList processes={processes} />
-      <ReadyGoList collections={collections}/>
       <RecentList recents={recents}/>
       <Footer className="layoutFooter" />
     </div>

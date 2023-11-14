@@ -79,6 +79,7 @@ body {
 .layoutContent {
   grid-area: content;
   background-color: #111828;
+  
 }
 
 

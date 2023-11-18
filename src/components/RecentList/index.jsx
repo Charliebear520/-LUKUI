@@ -1,6 +1,7 @@
 import { Row, Col } from "antd";
 import styles from "./recentlist.module.css"
 import { Swiper, SwiperSlide } from "swiper/react";
+import { Link } from "react-router-dom";
 
 export default function RecentList({recents}) {
   return (
@@ -48,11 +49,14 @@ export default function RecentList({recents}) {
        
         {recents.map((recent) => (
           <SwiperSlide className={styles.swiper_slide} key={recent.id}>
+            <Link to={`/recents/id/${recent.id}`}>
             <img
               className={styles.photo}
               src={recent.image}
               alt={recent.name}
             />
+            </Link>
+        
             <p className={styles.name}>{recent.name}</p>
             <p className={styles.description}>{recent.description}</p>
             {/* <p>{recent.comment}</p> */}

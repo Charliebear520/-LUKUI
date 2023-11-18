@@ -3,6 +3,7 @@ import Header from "../components/Header"
 import Footer from "../components/Footer"
 import ScheduleList from "../components/ScheduleList";
 import schedules from "../json/schedule.json"
+import EditScheduleList from "../components/EditScheduleList ";
 
 
 function Schedule() {
@@ -18,7 +19,7 @@ function Schedule() {
       />
       
       <ScheduleList schedules={schedules} className="layoutContent" />
-    
+      <EditScheduleList schedules={schedules}/>
       <Footer className="layoutFooter" />
     </div>
   );

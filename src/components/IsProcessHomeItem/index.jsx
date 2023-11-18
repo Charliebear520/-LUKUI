@@ -5,7 +5,7 @@ import { Button } from "antd";
 export default function IsProcessHomeItem({ process }) {
   return (
     <div className={styles.item}>
-      <Link to={`/processs/id/${process.id}`}>
+      <Link to={`/processes/id/${process.id}`}>
         <img style={{ width: "100%" ,padding:"1.5rem",borderRadius: 10}} src={process.image} alt={process.name} />
       </Link>
       <div className={styles.info}>

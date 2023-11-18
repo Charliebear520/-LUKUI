@@ -1,8 +1,9 @@
 .item {
-   background-color: #111828;
-   border-radius: 1%;
-   border: solid gray 1px;
+   background-color: #FEFCF9;
+   border-radius: 15px;
+   border: solid #979797 1px;
    padding: 0;
+   display:flex;
 }
 
 .info {
@@ -10,18 +11,18 @@
 }
 
 .category {
-   color: white;
+   color: black;
    opacity: 0.4;
    margin-bottom: 0.2rem;
 }
 
 .name {
-   color: white;
+   color: black;
    margin-bottom: 0.5rem;
 }
 
 .description {
-   color: white;
+   color: black;
    opacity: 0.6;
    margin-bottom: 1rem;
 }
@@ -33,6 +34,10 @@
 }
 
 .textGray {
-   color: white;
+   color: black;
    opacity: 0.6;
+}
+
+.img_link{
+   width:40%;
 }

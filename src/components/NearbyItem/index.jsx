@@ -2,32 +2,32 @@
 import { Link } from 'react-router-dom';
 import styles from './nearbyitem.module.css';
 
-export default function NearbyItem({ product }) {
+export default function NearbyItem({ nearby }) {
    return (
       <div className={styles.item}>
-        <Link to={`/products/id/${product.id}`}>
+        <Link to={`/nearbys/id/${nearby.id}`} className={styles.image_link}>
             <img
                style={{ width: '100%' }}
-               src={product.image}
-               alt={product.name} />
+               src={nearby.image}
+               alt={nearby.name} />
          </Link>
          <div className={styles.info}>
             <h6 className={styles.category}>
-               {product.category}
+               {nearby.category}
             </h6>
             <h2 className={styles.name}>
-               {product.name}
+               {nearby.name}
             </h2>
             <p className={styles.description}>
-               {product.description}
+               {nearby.description}
             </p>
             <div className={styles.more}>
-               <Link to={`/products/id/${product.id}`} className={styles.link}>
+               <Link to={`/nearbys/id/${nearby.id}`} className={styles.link}>
                   See More ...
                </Link>
                <span
                   className={styles.textGray}>
-                  USD {product.price}.00
+                  USD {nearby.price}.00
                </span>
             </div>
          </div>

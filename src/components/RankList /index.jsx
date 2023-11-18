@@ -8,6 +8,7 @@ import { Swiper, SwiperSlide } from "swiper/react";
 import "swiper/css";
 import "swiper/css/scrollbar";
 // import "swiper/css/pagination";
+import { Link } from "react-router-dom";
 
 
 // import { Pagination } from "swiper";
@@ -65,11 +66,14 @@ export default function RankList({ ranks }) {
            
             {ranks.map((rank) => (
               <SwiperSlide className={styles.swiper_slide} key={rank.id}>
+                <Link to={`/ranks/id/${rank.id}`}> 
                 <img
                   className={styles.photo}
                   src={rank.image}
                   alt={rank.name}
                 />
+                </Link>
+             
                 <p className={styles.name}>{rank.name}</p>
                 <p className={styles.description}>{rank.description}</p>
                 {/* <p>{rank.comment}</p> */}

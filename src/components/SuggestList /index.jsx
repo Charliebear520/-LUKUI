@@ -8,6 +8,7 @@ import { Swiper, SwiperSlide } from "swiper/react";
 import "swiper/css";
 import "swiper/css/scrollbar";
 // import "swiper/css/pagination";
+import { Link } from "react-router-dom";
 
 
 // import { Pagination } from "swiper";
@@ -65,11 +66,13 @@ export default function SuggestList({ suggests }) {
            
             {suggests.map((suggest) => (
               <SwiperSlide className={styles.swiper_slide} key={suggest.id}>
+                <Link to={`/suggests/id/${suggest.id}`}>
                 <img
                   className={styles.photo}
                   src={suggest.image}
                   alt={suggest.name}
                 />
+                </Link>             
                 <p className={styles.name}>{suggest.name}</p>
                 <p className={styles.description}>{suggest.description}</p>
                 {/* <p>{suggest.comment}</p> */}

@@ -7,6 +7,7 @@ import { Swiper, SwiperSlide } from "swiper/react";
 // Import Swiper styles
 import "swiper/css";
 import "swiper/css/scrollbar";
+import { Link } from "react-router-dom";
 // import "swiper/css/pagination";
 
 
@@ -65,11 +66,14 @@ export default function ReviewList({ reviews }) {
            
             {reviews.map((review) => (
               <SwiperSlide className={styles.swiper_slide} key={review.id}>
+                <Link to={`/reviews/id/${review.id}`}>
                 <img
                   className={styles.photo}
                   src={review.image}
                   alt={review.name}
                 />
+                </Link>
+
                 <p className={styles.name}>{review.name}</p>
                 <p className={styles.description}>{review.description}</p>
                 {/* <p>{review.comment}</p> */}

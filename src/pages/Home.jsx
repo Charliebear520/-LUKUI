@@ -3,6 +3,7 @@ import Header from "../components/Header"
 import Footer from "../components/Footer"
 import NearbyList from "../components/NearbyList";
 import products from "../json/products.json";
+import nearbys from "../json/nearbys.json";
 import ReviewList from "../components/ReviewList";
 import reviews from "../json/suggests.json";
 
@@ -35,7 +36,7 @@ function Home() {
       <ReviewList reviews={reviews} />
       <SuggestList suggests={suggests}/>
       <RankList ranks={ranks}/>
-      <NearbyList products={products} className="layoutContent" />
+      <NearbyList nearbys={nearbys} className="layoutContent" />
       <RecentList recents={recents}/>
       <Footer className="layoutFooter" />
     </div>

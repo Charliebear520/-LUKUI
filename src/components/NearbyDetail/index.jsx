@@ -4,38 +4,38 @@ import { EnvironmentFilled,ClockCircleOutlined,GlobalOutlined } from "@ant-desig
 import styles from "./nearbydetail.module.css";
 const { Option } = Select;
 
-function ProductDetail({ product }) {
-  const [qty, setQty] = useState(product.countInStock > 0 ? 1 : 0);
+function NearbyDetail({ nearby }) {
+  const [qty, setQty] = useState(nearby.countInStock > 0 ? 1 : 0);
 
   return (
     <Row gutter={[0, 0]} style={{ justifyContent: "center", margin: "1rem" }}>
-      <h2 className={styles.category}>{product.category}</h2>
+      <h2 className={styles.category}>{nearby.category}</h2>
       <Col xs={{ span: 24 }} lg={{ span: 6 }}>
         <div className={styles.infobar}>
-          <h1 className={styles.name}>{product.name}</h1>
+          <h1 className={styles.name}>{nearby.name}</h1>
         </div>
       </Col>
       <Col xs={{ span: 24 }} lg={{ span: 6 }}>
-        <img alt={product.name} className={styles.image} src={product.image} />
+        <img alt={nearby.name} className={styles.image} src={nearby.image} />
       </Col>
       <Col xs={{ span: 24 }} lg={{ span: 14 }}>
         <div className={styles.info}>
-          <p className={styles.description}>{product.description_long}</p>
+          <p className={styles.description}>{nearby.description_long}</p>
         </div>
       </Col>
       <Col xs={{ span: 24 }} lg={{ span: 14 }}>
         <div className={styles.infobox}>
           <div className={styles.infosection}>
             <EnvironmentFilled style={{color:"black",marginRight:"2rem"}}/>
-            <p className={styles.description}>{product.site}</p>
+            <p className={styles.description}>{nearby.site}</p>
           </div>
           <div className={styles.infosection}> 
             <ClockCircleOutlined style={{color:"black",marginRight:"2rem"}}/>
-            <p className={styles.description}>{product.time}</p>
+            <p className={styles.description}>{nearby.time}</p>
           </div>
           <div className={styles.infosection}>
             <GlobalOutlined style={{color:"black",marginRight:"2rem"}}/>
-            <p className={styles.description}>{product.website}</p>
+            <p className={styles.description}>{nearby.website}</p>
           </div>
         </div>
       </Col>
@@ -43,4 +43,4 @@ function ProductDetail({ product }) {
   );
 }
 
-export default ProductDetail;
+export default NearbyDetail;

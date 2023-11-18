@@ -1,18 +1,18 @@
 import { Row, Col } from "antd";
 import NearbyItem from "../NearbyItem";
 
-export default function NearbyList({products}) {
+export default function NearbyList({nearbys}) {
   return (
     <Row gutter={[32, 32]}>
-    {products.map(product => (
+    {nearbys.map(nearby => (
         <Col 
-          key={product.id} 
+          key={nearby.id} 
           sm={{ span: 8 }} 
           md={{ span: 8 }}
           lg={{ span: 8 }}
           xl={{ span: 8 }}
         >
-          <NearbyItem product={product}/>
+          <NearbyItem nearby={nearby}/>
         </Col>
       ))}
     </Row>

@@ -1,5 +1,4 @@
 import { Row, Col } from "antd";
-import ReadyGoHomeItem from "../ReadyGoHomeItem ";
 import styles from "./readygo.module.css";
 import vector from "../../../public/images/vector.png";
 

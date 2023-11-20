@@ -8,7 +8,7 @@ function ReviewDetail({ process }) {
   const [qty, setQty] = useState(process.countInStock > 0 ? 1 : 0);
 
   return (
-    <Row gutter={[0, 0]} style={{ justifyContent: "center", margin: "1rem" }}>
+    <Row gutter={[0, 0]} style={{ justifyContent: "flex-start", margin: "1rem" }}>
       <h2 className={styles.category}>{process.category}</h2>
       <Col xs={{ span: 24 }} lg={{ span: 6 }}>
         <div className={styles.infobar}>

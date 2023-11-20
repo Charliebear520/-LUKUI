@@ -38,14 +38,17 @@ export default function ScheduleItem({ schedule }) {
             <LoginOutlined style={{color:'black'}}/>
             <p className={styles.edit}>抵達時間</p>
           </div>
+          <hr className={styles.box}/>
           <div className={styles.edit_item}>
             <LogoutOutlined style={{color:'black'}}/>
             <p className={styles.edit}>離開時間</p>
           </div>
+          <hr className={styles.box}/>
           <div className={styles.edit_item}>
             <DollarOutlined style={{ color: "black" }} />
             <p className={styles.edit}>開銷</p>
           </div>
+          <hr className={styles.box}/>
           <div className={styles.edit_item}>
             <EditFilled style={{ color: "black" }} />
             <p className={styles.edit}>備註</p>

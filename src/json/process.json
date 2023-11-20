@@ -1,15 +1,16 @@
 [
     { 
       "id": "1",
-      "category": "Textile",
+      "category": "首頁>推薦景點",
       "name": "快樂北北基",
       "sku": "sku_313354",
       "price": 82,
       "image": "/images/快樂北北基.png",
       "description": "9/28-9/30",
       "description_long": "這次旅費只有1500，然後美美還沒說到底要不要去.",
-      "currency": "USD",
-      "countInStock": 10    
+      "site": "台北市信義區信義路五段7號",
+      "time": "星期一 上午11時-下午9:30",
+      "website":"stage.taipei101mail.com.tw"
     }
 
   ]

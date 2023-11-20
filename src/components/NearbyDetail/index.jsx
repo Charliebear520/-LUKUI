@@ -5,7 +5,7 @@ import styles from "./nearbydetail.module.css";
 const { Option } = Select;
 
 function NearbyDetail({ nearby }) {
-  const [qty, setQty] = useState(nearby.countInStock > 0 ? 1 : 0);
+  
 
   return (
     <Row gutter={[0, 0]} style={{ justifyContent: "center", margin: "1rem" }}>

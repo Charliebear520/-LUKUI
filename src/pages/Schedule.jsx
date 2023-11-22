@@ -3,7 +3,7 @@ import Header from "../components/MyScheduleHeader "
 import Footer from "../components/Footer"
 import ScheduleList from "../components/ScheduleList";
 import schedules from "../json/schedule.json"
-import EditScheduleList from "../components/EditScheduleList ";
+// import EditScheduleList from "../components/EditScheduleList ";
 
 
 function Schedule() {

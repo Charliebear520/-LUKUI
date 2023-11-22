@@ -1,9 +1,9 @@
 import { Row, Col } from "antd";
+import ReadyGoItem from "../ReadyGoItem";
 import styles from "./readygo.module.css";
 import vector from "../../../public/images/vector.png";
-import ReadyGoHomeItem from "../ReadyGoHomeItem ";
 
-export default function ReadyGoHomeList({ collections }) {
+export default function ReadyGoList({ collections }) {
   return (
     <div>
       <div
@@ -33,7 +33,7 @@ export default function ReadyGoHomeList({ collections }) {
             lg={{ span: 8 }}
             xl={{ span: 8 }}
           >
-            <ReadyGoHomeItem collection={collection} />
+            <ReadyGoItem collection={collection} />
           </Col>
         ))}
       </Row>

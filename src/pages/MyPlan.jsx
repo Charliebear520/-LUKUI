@@ -9,7 +9,7 @@ import mycollections from "../json/mycollection.json"
 import IsProcessList from "../components/IsProcessList";
 import IsPlanningList from "../components/IsPlanningList";
 import ReadyGoList from "../components/ReadyGoList "
-import HistoryList from "../components/HistoryList "
+import HistoryList from "../components/HistoryList"
 import MyCollectionList from "../components/MyCollectionLIst"
 
 function MyPlan() {

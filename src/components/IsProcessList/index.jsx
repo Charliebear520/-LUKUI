@@ -1,5 +1,5 @@
 import { Row, Col } from "antd";
-import IsProcessItem from "../IsProcessItem ";
+import IsProcessItem from "../IsProcessItem";
 import styles from "./isprocess.module.css"
 
 export default function IsProcessList({processes}) {

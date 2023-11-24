@@ -16,7 +16,7 @@ import ReadyGoHomeList from "../components/ReadyGoHomeList";
 import RecentList from "../components/RecentList";
 import IsProcessHomeList from "../components/IsProcessHomeList";
 import SuggestList from "../components/SuggestList";
-import RankList from "../components/RankList ";
+import RankList from "../components/RankList";
 
 function Home() {
   const title = "NORDIC NEST Shopping Cart";

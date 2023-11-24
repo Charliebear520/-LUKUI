@@ -8,7 +8,7 @@ import collections from "../json/collection.json"
 import mycollections from "../json/mycollection.json"
 import IsProcessList from "../components/IsProcessList";
 import IsPlanningList from "../components/IsPlanningList";
-import ReadyGoList from "../components/ReadyGoList "
+import ReadyGoList from "../components/ReadyGoList"
 import HistoryList from "../components/HistoryList"
 import MyCollectionList from "../components/MyCollectionLIst"
 

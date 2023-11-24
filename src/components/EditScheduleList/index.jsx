@@ -1,5 +1,5 @@
 import { Row, Col } from "antd";
-import EditScheduleItem from "../EditScheduleItem  ";
+import EditScheduleItem from "../EditScheduleItem";
 
 export default function EditScheduleList({schedules}) {
   return (

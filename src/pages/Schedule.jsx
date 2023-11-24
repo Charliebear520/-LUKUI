@@ -1,5 +1,5 @@
 import { Helmet } from "react-helmet-async"
-import Header from "../components/MyScheduleHeader "
+import Header from "../components/MyScheduleHeader"
 import Footer from "../components/Footer"
 import ScheduleList from "../components/ScheduleList";
 import schedules from "../json/schedule.json"

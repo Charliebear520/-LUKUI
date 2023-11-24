@@ -1,5 +1,5 @@
 import { Row, Col } from "antd";
-import ScheduleItem from "../ScheduleItem ";
+import ScheduleItem from "../ScheduleItem";
 import styles from "./schedulelist.module.css";
 import { EditOutlined } from "@ant-design/icons";
 

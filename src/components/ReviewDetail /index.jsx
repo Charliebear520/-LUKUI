@@ -1,11 +1,11 @@
-import { useState } from "react";
-import { Row, Col, Select } from "antd";
+
+import { Row, Col} from "antd";
 import { EnvironmentFilled,ClockCircleOutlined,GlobalOutlined } from "@ant-design/icons";
 import styles from "./reviewdetail.module.css";
-const { Option } = Select;
+
 
 function ReviewDetail({ review }) {
-  const [qty, setQty] = useState(review.countInStock > 0 ? 1 : 0);
+ 
 
   return (
     <Row gutter={[0, 0]} style={{ justifyContent: "center", margin: "1rem" }}>

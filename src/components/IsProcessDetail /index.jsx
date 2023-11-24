@@ -4,7 +4,7 @@ import { EnvironmentFilled,ClockCircleOutlined,GlobalOutlined } from "@ant-desig
 import styles from "./isprocessdetail.module.css";
 const { Option } = Select;
 
-function ReviewDetail({ process }) {
+function IsProcessDetail({ process }) {
   const [qty, setQty] = useState(process.countInStock > 0 ? 1 : 0);
 
   return (
@@ -43,4 +43,4 @@ function ReviewDetail({ process }) {
   );
 }
 
-export default ReviewDetail;
+export default IsProcessDetail;

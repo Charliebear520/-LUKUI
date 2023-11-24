@@ -1,12 +1,11 @@
-import { useState } from "react";
-import { Row, Col, Select } from "antd";
+
+import { Row, Col } from "antd";
 import { EnvironmentFilled,ClockCircleOutlined,GlobalOutlined } from "@ant-design/icons";
 import styles from "./rankdetail.module.css";
-const { Option } = Select;
+
 
 function RankDetail({ rank }) {
-  const [qty, setQty] = useState(rank.countInStock > 0 ? 1 : 0);
-
+ 
   return (
     <Row gutter={[0, 0]} style={{ justifyContent: "center", margin: "1rem" }}>
       <h2 className={styles.category}>{rank.category}</h2>

@@ -1,5 +1,5 @@
-import { Row, Col, theme } from "antd";
-import React, { useRef, useState } from "react";
+import { Row, Col } from "antd";
+import React from "react";
 // import rankItem from "../rankItem/Index";
 import styles from "./ranklist.module.css";
 // Import Swiper React components
@@ -14,12 +14,7 @@ import { Link } from "react-router-dom";
 // import { Pagination } from "swiper";
 
 export default function RankList({ ranks }) {
-  const {
-    token: { colorBgBase, colorTextFooter },
-  } = theme.useToken();
-  const onChange = (e) => {
-    console.log(`checked = ${e.target.checked}`);
-  };
+
   return (
 
       <Row gutter={[32, 0]} className={styles.section}>

@@ -5,7 +5,8 @@
       "name": "不快樂台北",
       "sku": "sku_313354",
       "price": 82,
-      "image": "/images/不快樂台北.png",
+     
+      "image": "src/images/不快樂台北.png",
       "description": "9/28-9/30",
       "description_long": "",
       "currency": "USD",

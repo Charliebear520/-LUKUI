@@ -1,11 +1,8 @@
-import { useState } from "react";
-import { Link } from "react-router-dom"
-import NavBar from "../NavBar";
 import styles from "./header.module.css";
-import HamburgerMenu from "../HamburgerMenu"
-import { Input ,Col,Row,Button} from "antd";
-import {SearchOutlined} from '@ant-design/icons'
-import image from "../../../public/images/基隆.jpeg";
+
+import { Col,Row} from "antd";
+
+import image from "../../images/基隆.jpeg";
 
 export default function MyScheduleHeader() {
     return (

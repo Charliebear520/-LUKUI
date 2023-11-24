@@ -1,7 +1,7 @@
 import { Row, Col } from "antd";
 import ReadyGoItem from "../ReadyGoItem";
 import styles from "./readygo.module.css";
-import vector from "../../../public/images/vector.png";
+import vector from "../../images/vector.png";
 
 export default function ReadyGoList({ collections }) {
   return (

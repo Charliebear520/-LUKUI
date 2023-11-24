@@ -1,11 +1,8 @@
-import { useState } from "react";
-import { Link } from "react-router-dom"
-import NavBar from "../NavBar";
+
 import styles from "./header.module.css";
-import HamburgerMenu from "../HamburgerMenu"
-import { Input ,Col,Row,Button} from "antd";
+import { Input ,Col,Row} from "antd";
 import {SearchOutlined} from '@ant-design/icons'
-import image from "../../../public/images/bg.png";
+import image from "../../images/bg.png";
 
 export default function Header() {
     return (

@@ -1,7 +1,7 @@
 import { Row, Col } from "antd";
 import IsProcessHomeItem from "../IsProcessHomeItem";
 import styles from "./isprocesshomelist.module.css";
-import vector from "../../../public/images/vector.png";
+import vector from "../../images/vector.png";
 
 export default function IsProcessHomeList({ processes }) {
   return (

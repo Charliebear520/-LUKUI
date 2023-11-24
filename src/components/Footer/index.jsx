@@ -1,7 +1,7 @@
 import styles from "./footer.module.css";
 import { Row, Col, BackTop } from "antd";
 import { MailFilled } from "@ant-design/icons";
-import logobg from "../../../public/images/logo.png"
+import logobg from "../../images/logo.png"
 
 export default function Footer() {
   return (

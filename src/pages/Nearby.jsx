@@ -1,7 +1,7 @@
 
 import { useParams } from 'react-router-dom';
 import { Helmet } from "react-helmet-async"
-import Header from "../components/Header"
+
 import Footer from "../components/Footer"
 import NearbyDetail from "../components/NearbyDetail";
 import nearbys from "../json/nearbys.json";
